@@ -27,12 +27,12 @@ const TutorialFlow = () => {
         <strong>How our Device will work?</strong>
       </h2>
       <Fade left>
-        <GridContainer justify="right">
-          <GridItem xs={12} sm={12} md={16}>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={14}>
             <img
               src={img1}
               class="img-fluid tutorial-image"
-              alt="Responsive image"
+              //alt="Responsive image"
             />
           </GridItem>
           {/* <GridItem xs={12} sm={12} md={4}>
