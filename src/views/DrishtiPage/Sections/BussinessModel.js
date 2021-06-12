@@ -1,0 +1,172 @@
+import {
+  Apartment,
+  Assessment,
+  AccessibleForward,
+  Contacts,
+  DirectionsWalk,
+} from "@material-ui/icons";
+import GridContainer from "components/Grid/GridContainer";
+import GridItem from "components/Grid/GridItem";
+import InfoArea from "components/InfoArea/InfoArea";
+import React from "react";
+import img1 from "assets/img/ngo.jpg";
+import img2 from "assets/img/bionic.jpeg";
+import img3 from "assets/img/bs1.jpeg";
+import img5 from "assets/img/hospital.webp";
+import img6 from "assets/img/patient.jpg";
+import img4 from "assets/img/bigData.webp";
+import "bootstrap/dist/css/bootstrap.min.css";
+import CanvaVideo from "./CanvaVideo";
+import Fade from "react-reveal/Fade";
+
+const BussinessModel = () => {
+  return (
+    <div className="container pt-5">
+      <Fade top>
+        <h2 className="text-center pt-5 my-4">
+          Why our Product is need of the hour?
+        </h2>
+        <CanvaVideo embedId="DAEhGuMUu1M" />
+      </Fade>
+      <Fade left>
+        {/* <img
+          // style={{ width: "50%" }}
+          src={img3}
+          class="img-fluid mx-auto d-flex"
+          alt="Responsive image"
+        /> */}
+        {/* <p className="p-3" style={{ fontSize: "1.5rem", lineHeight: "2rem" }}>
+          As per the given data by the National Programme for Control of
+          Blindness
+          {"&"} Visual Impairment(NPCBVI). 1,04,09,383 patients with visual
+          impairment handled by 1,255 NGOs and 471 low vison dedicated hospitals
+          in India hence. To make their life obstacles free with the power of
+          today's technology Drishti is the solution.
+        </p> */}
+      </Fade>
+      <Fade right>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={6}>
+            <InfoArea
+              title="For Hospitals and Medical Firms"
+              description={`Hospitals and firms those who want AI/ML based softwares to diagnose a patient's DNA in labs for treatment.
+              `}
+              icon={Apartment}
+              iconColor="rose"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+            <img
+              style={{ width: "50%" }}
+              src={img5}
+              class="img-fluid mx-auto d-flex"
+              alt="Responsive image"
+            />
+          </GridItem>
+        </GridContainer>
+      </Fade>
+      <br />
+      <br />
+      <br />
+      <Fade left>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={6}>
+            <img
+              style={{ width: "50%" }}
+              src={img1}
+              class="img-fluid mx-auto d-flex"
+              alt="Responsive image"
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+            <InfoArea
+              title="For NGO’s"
+              description={`NGOs who want to suggest a proper diet for a healthy lifestyle as per their communities body needs`}
+              icon={AccessibleForward}
+              iconColor="rose"
+              vertical
+            />
+          </GridItem>
+        </GridContainer>
+      </Fade>
+      <br />
+      <br />
+      <br />
+      <Fade right>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={6}>
+            <InfoArea
+              title="Patients"
+              description="Patients who suffered from diseases like covid19 or cancer who wants to know their future immunity and diet"
+              icon={Contacts}
+              iconColor="default"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+            <img
+              style={{ width: "50%" }}
+              src={img6}
+              class="img-fluid mx-auto d-flex"
+              alt="Responsive image"
+            />
+          </GridItem>
+        </GridContainer>
+      </Fade>
+      <br />
+      <br />
+      <br />
+      <Fade left>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={6}>
+            <img
+              style={{ width: "50%" }}
+              src={img2}
+              class="img-fluid mx-auto d-flex"
+              alt="Responsive image"
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+            <InfoArea
+              title="For Bionic Firms Companies"
+              description="We can also collaborate with various bionic firms or Local Governments to integrate our solutions with some of their schemes and services"
+              icon={DirectionsWalk}
+              iconColor="rose"
+              vertical
+            />
+          </GridItem>
+        </GridContainer>
+      </Fade>
+      <br />
+      <br />
+      <br />
+      {/* <Fade right>
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={6}>
+            <InfoArea
+              title="For Big Data Clients"
+              description="Apart from our product we also intend to sell loads of data generated by thousands of such devices to Big Data firms involved in navigation and path mapping. The data regarding permanent obstacles detected by our devices can be sold to firms like Google as it can help make their services like Google Maps more informative and useful."
+              icon={Assessment}
+              iconColor="default"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+            <img
+              style={{ width: "50%" }}
+              src={img4}
+              class="img-fluid mx-auto d-flex"
+              alt="Responsive image"
+            />
+          </GridItem>
+        </GridContainer>
+      </Fade>
+      <br />
+      <br />
+      <br /> */}
+    </div>
+  );
+};
+
+export default BussinessModel;
